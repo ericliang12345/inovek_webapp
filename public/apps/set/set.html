@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Set" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Restful Get</title>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/template.css" rel="stylesheet">
+    <link href="../../lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/layoutit.css" rel="stylesheet">
+  
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  
+    <script src="../../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/jquery.htmlClean.js"></script>
+    <script src="../../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+ 
+    <style>
+            #get_select{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 80%;
+            }
+
+            #inputlg{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;                                  
+                    width: 80%;
+            }
+
+            #set-btn{                    
+                    display: block;
+                    margin-top:15px;
+                    margin-left: 545px;                    
+            }     
+
+            #response-obj{
+                margin-top:20px;
+            }       
+
+            #set_label {
+              margin-left: 68px;
+            }
+
+    </style>
+
+  </head>
+
+
+  <div class="container">
+        <div class="row">
+        <h1></h1>
+                    <select class="form-control" id="get_select">  
+                    <option value="/v1/info">/v1/info</option>
+                    <option value="/v1/led">/v1/led</option>
+                    <option value="/v1/led/front_led">/v1/led/front_led</option>
+                    <option value="/v1/audio/volume">/v1/audio/volume</option>
+                    </select>                               
+                    <button type="button" class="btn btn-info" id="set-btn">Set</button>   
+                    <label for="inputlg" id="set_label">Set Command</label>
+                    <input class="form-control input-lg" id="inputlg" type="text">                                            
+        </div>
+        <div class="panel panel-success" id="response-obj">
+        <div class="panel-heading">
+                <h3 class="panel-title">Response</h3>
+            </div>
+            <div class="panel-body" style="height:140px">
+            </div>
+        </div>
+  </div>
+
+  <script>
+
+  </script>  
+
+  </body>
+</html>

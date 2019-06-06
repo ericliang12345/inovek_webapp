@@ -1,0 +1,29 @@
+{
+    "default":  {
+        "path":  "./logs",
+        "limit":  102400,
+        "files":  100,
+
+        "static":  {
+            "level":  5,
+            "information":  1,
+            "path":  "./logs",
+            "limit":  102400,
+            "files":  100           
+        },
+        "dynamic":  {
+            "level":  7,
+            "information":  1
+        }
+    },
+
+    "dataflow":  {
+        "enable": 1,
+        "els": {
+            "server": "127.0.0.1:9200"
+        },
+        "dynamic":  {
+            "enable":  1
+        }        
+    }
+}

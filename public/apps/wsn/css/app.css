@@ -1,0 +1,78 @@
+/* WSN */
+
+.table > thead > tr > td.title,
+.table > tbody > tr > td.title,
+.table > tfoot > tr > td.title,
+.table > thead > tr > th.title,
+.table > tbody > tr > th.title,
+.table > tfoot > tr > th.title,
+.table > thead > tr.title > td,
+.table > tbody > tr.title > td,
+.table > tfoot > tr.title > td,
+.table > thead > tr.title > th,
+.table > tbody > tr.title > th,
+.table > tfoot > tr.title > th {
+  background-color: #4682B4;
+}
+
+.table > thead > tr > td.gw,
+.table > tbody > tr > td.gw,
+.table > tfoot > tr > td.gw,
+.table > thead > tr > th.gw,
+.table > tbody > tr > th.gw,
+.table > tfoot > tr > th.gw,
+.table > thead > tr.gw > td,
+.table > tbody > tr.gw > td,
+.table > tfoot > tr.gw > td,
+.table > thead > tr.gw > th,
+.table > tbody > tr.gw > th,
+.table > tfoot > tr.gw > th {
+  background-color: #4caf50;
+}
+
+.table > thead > tr > td.senhub_even,
+.table > tbody > tr > td.senhub_even,
+.table > tfoot > tr > td.senhub_even,
+.table > thead > tr > th.senhub_even,
+.table > tbody > tr > th.senhub_even,
+.table > tfoot > tr > th.senhub_even,
+.table > thead > tr.senhub_even > td,
+.table > tbody > tr.senhub_even > td,
+.table > tfoot > tr.senhub_even > td,
+.table > thead > tr.senhub_even > th,
+.table > tbody > tr.senhub_even > th,
+.table > tfoot > tr.senhub_even > th {
+  background-color: #FFFFFF;
+}
+
+
+
+.table > thead > tr > td.senhub_odd,
+.table > tbody > tr > td.senhub_odd,
+.table > tfoot > tr > td.senhub_odd,
+.table > thead > tr > th.senhub_odd,
+.table > tbody > tr > th.senhub_odd,
+.table > tfoot > tr > th.senhub_odd,
+.table > thead > tr.senhub_odd > td,
+.table > tbody > tr.senhub_odd > td,
+.table > tfoot > tr.senhub_odd > td,
+.table > thead > tr.senhub_odd > th,
+.table > tbody > tr.senhub_odd > th,
+.table > tfoot > tr.senhub_odd > th {
+  background-color: #FFFACD;
+}
+
+.table > thead > tr > td.senhub_discon,
+.table > tbody > tr > td.senhub_discon,
+.table > tfoot > tr > td.senhub_discon,
+.table > thead > tr > th.senhub_discon,
+.table > tbody > tr > th.senhub_discon,
+.table > tfoot > tr > th.senhub_discon,
+.table > thead > tr.senhub_discon > td,
+.table > tbody > tr.senhub_discon > td,
+.table > tfoot > tr.senhub_discon > td,
+.table > thead > tr.senhub_discon > th,
+.table > tbody > tr.senhub_discon > th,
+.table > tfoot > tr.senhub_discon > th {
+  background-color: #D3D3D3;
+}
