@@ -56,7 +56,34 @@
             }
 
     </style>
+  <script>
+        function http_set(){
+            console.log('11111111 ');
+            var xhttp = new XMLHttpRequest();
+            var uri = "http://172.20.10.2:8080";
+            //var uri = "http://172.22.12.213:4000";
+            var data = "";
+            var e = document.getElementById("get_select");
+            uri += e.options[e.selectedIndex].value;
+            data = document.getElementById("inputlg").value;
+            console.log('post data= ' + data);
+            xhttp.open("POST", uri);
+            xhttp.send(data);                
 
+            xhttp.onreadystatechange = function() {
+                if (xhttp.readyState == 4 && xhttp.status == 200 ) {
+                    //alert(this.responseText);
+                    var msg = "HTTP Status: "+ xhttp.status + '\n\n';
+                    msg += this.responseText;
+                    document.getElementById("set-response-text").innerText = msg;
+                } else if ( xhttp.readyState == 4 && xhttp.status != 200 ) {
+                    //alert("Failed");
+                    var errorCode = "HTTP Status: "+ xhttp.status;
+                    document.getElementById("set-response-text").innerText = errorCode;
+                }
+            };                        
+        }
+</script>  
   </head>
 
 
@@ -69,7 +96,7 @@
                     <option value="/v1/led/front_led">/v1/led/front_led</option>
                     <option value="/v1/audio/volume">/v1/audio/volume</option>
                     </select>                               
-                    <button type="button" class="btn btn-info" id="set-btn">Set</button>   
+                    <button type="button" class="btn btn-info" id="set-btn"  onclick="http_set()">Set</button>   
                     <label for="inputlg" id="set_label">Set Command</label>
                     <input class="form-control input-lg" id="inputlg" type="text">                                            
         </div>
@@ -77,14 +104,12 @@
         <div class="panel-heading">
                 <h3 class="panel-title">Response</h3>
             </div>
-            <div class="panel-body" style="height:140px">
+            <div class="panel-body" style="height:140px" id="set-response-text">
             </div>
         </div>
   </div>
 
-  <script>
 
-  </script>  
 
   </body>
 </html>

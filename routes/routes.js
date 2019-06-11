@@ -5,12 +5,15 @@ var advlog = require('../apps/log_mgt/AdvJSLog.js');
 
 // Global Variables
 var ReturnHead = {'Connection':'close',
-				  'Content-Type':'application/json',
-				  'Access-Control-Allow-Origin':'*'};
+				  'Content-Type':'application/json'};
+
+var ReturnHead2 = {'Connection':'close',
+'Content-Type':'application/json',
+'Access-Control-Allow-Origin':'*'};			
 
 function setCORSHeaders (res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST');
+  res.setHeader('Access-Control-Allow-Methods', 'GET');
   res.setHeader('Access-Control-Allow-Headers', 'accept, content-type');
 }
 

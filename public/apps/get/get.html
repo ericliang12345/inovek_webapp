@@ -53,7 +53,7 @@
         <h1></h1>
                     <select class="form-control" id="get_select">  
                     <option value="/v1/oauth2/token">/v1/oauth2/token</option>
-                    <option value="/v1/led">/v1</option>
+                    <option value="/v1/hello">/v1/hello</option>
                     <option value="/v1/led/front_led">/v1/led/front_led</option>
                     <option value="/v1/audio/volume">/v1/audio/volume</option>
                     </select>                               
@@ -73,10 +73,11 @@
   <script>
                     function http_get(){
                         var xhttp = new XMLHttpRequest();
-                        var uri = "/restapi";
+                        var uri = "http://172.20.10.2:8080";
+                        //var uri = "http://172.22.12.213:4000";
 
                         var e = document.getElementById("get_select");
-                        uri += e.options[e.selectedIndex].text;
+                        uri += e.options[e.selectedIndex].value;
                         console.log('get data= ' + uri);
                         xhttp.open("GET", uri);
                         xhttp.send();                
